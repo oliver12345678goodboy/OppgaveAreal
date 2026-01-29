@@ -21,19 +21,35 @@ def skriv_meny():
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
 
+    def Kvadrat(s):
+        arealkvadrat = s*s
+        return arealkvadrat
+
+
 
 # Funksjon for å beregne arealet av et rektangel skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
 
+    def rektangel(g, h):
+        arealrektangel =g*h
+        return arealrektangel
+
 # Funksjon for å beregne arealet av en trekant skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
 
+    def trekant(g, h):
+        arealtrekant = (g*h)/2
+        return arealtrekant
 
 # Funksjon for å beregne arealet av et parallellogram skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
+
+    def parallellogram(g, h):
+        arealparallellogram = g*h
+        return arealparallellogram
 
 
 # Funksjon for å beregne arealet av en rombe skrives her. Funsjonen skal ta imot to parameter (g og h)
