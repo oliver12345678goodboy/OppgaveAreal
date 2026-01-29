@@ -37,16 +37,26 @@ def skriv_meny():
 
 
 # Funksjon for å beregne arealet av en rombe skrives her. Funsjonen skal ta imot to parameter (g og h)
+    def arealRombe (g, h):
+        areal = g * h
+        return areal
 # Funksjonen skal returnere arealet
 # Utvikler 2 har ansvaret for å lage denne funksjonen
 
 
 # Funksjon for å beregne arealet av en trapes skrives her. Funsjonen skal ta imot tre parameter (a, b og h)
+    def trapes (a, b, h):
+        areal = ((a + b) / 2) * h
+        return areal
 # Funksjonen skal returnere arealet
 # Utvikler 2 har ansvaret for å lage denne funksjonen
 
 
 # Funksjon for å beregne arealet av en sirkel skrives her. Funsjonen skal ta imot et parameter (r)
+    def srikel (r):
+        pi = 3.14
+        areal = pi * r * r
+        return areal
 # Funksjonen skal returnere arealet
 # Utvikler 2 har ansvaret for å lage denne funksjonen
 
