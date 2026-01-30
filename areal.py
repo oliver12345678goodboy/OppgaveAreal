@@ -45,7 +45,7 @@ def skriv_meny():
 
 
 # Funksjon for å beregne arealet av en trapes skrives her. Funsjonen skal ta imot tre parameter (a, b og h)
-    def trapes (a, b, h):
+    def arealTrapes (a, b, h):
         areal = ((a + b) / 2) * h
         return areal
 # Funksjonen skal returnere arealet
@@ -53,7 +53,7 @@ def skriv_meny():
 
 
 # Funksjon for å beregne arealet av en sirkel skrives her. Funsjonen skal ta imot et parameter (r)
-    def srikel (r):
+    def arealSirkel (r):
         pi = 3.14
         areal = pi * r * r
         return areal
@@ -88,15 +88,15 @@ while ans != "8":
     elif ans=="5":
         clear()
         print("\nHer bergnes arealet av en rombe")
-        venter=input("Trykk ENTER for å fortsette!") 
+        arealRombe=input("Trykk ENTER for å fortsette!") 
     elif ans=="6":
         clear()
         print("\nHer bergnes arealet av en trapes")
-        venter=input("Trykk ENTER for å fortsette!")         
+        arealTrapes=input("Trykk ENTER for å fortsette!")         
     elif ans=="7":
         clear()
         print("\nHer bergnes arealet av en sirkel")
-        venter=input("Trykk ENTER for å fortsette!") 
+        arealSirkel=input("Trykk ENTER for å fortsette!") 
     
 print("\nTakk for at du brukte areal-programmet! Velkommen igjen!\n")          
     
