@@ -21,58 +21,57 @@ def skriv_meny():
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
 
-    def Kvadrat(s):
-        arealkvadrat = s*s
-        return arealkvadrat
+def Kvadrat(s):
+    arealkvadrat = s*s
+    return arealkvadrat
 
 
 
-# Funksjon for å beregne arealet av et rektangel skrives her. Funsjonen skal ta imot to parameter (g og h)
+# Funksjon for å beregne arealet av5 et rektangel skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
 
-    def rektangel(g, h):
-        arealrektangel =g*h
-        return arealrektangel
+def rektangel(g, h):
+    arealrektangel = g*h
+    return arealrektangel
 
 # Funksjon for å beregne arealet av en trekant skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
 
-    def trekant(g, h):
-        arealtrekant = (g*h)/2
-        return arealtrekant
+def trekant(g, h):
+    arealtrekant = (g*h)/2
+    return arealtrekant
 
 # Funksjon for å beregne arealet av et parallellogram skrives her. Funsjonen skal ta imot to parameter (g og h)
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
 
-    def parallellogram(g, h):
-        arealparallellogram = g*h
-        return arealparallellogram
+def parallellogram(g, h):
+    arealparallellogram = g * h
+    return arealparallellogram
 
 
 # Funksjon for å beregne arealet av en rombe skrives her. Funsjonen skal ta imot to parameter (g og h)
-    def arealRombe (g, h):
-        areal = g * h
-        return areal
+def arealRombe (h, g):
+    areal = g * h
+    return areal
 # Funksjonen skal returnere arealet
 # Utvikler 2 har ansvaret for å lage denne funksjonen
 
 
-# Funksjon for å beregne arealet av en trapes skrives her. Funsjonen skal ta imot tre parameter (a, b og h)
-    def arealTrapes (a, b, h):
-        areal = ((a + b) / 2) * h
-        return areal
+# Funksjon for å beregne arealet av en trapes skrives her. Funsjonen skal ta imot tre parameter (a, b og h)5
+def arealTrapes (a, b, h):
+    arealTrapes = ((a + b) * h) / 2
+    return areal
 # Funksjonen skal returnere arealet
 # Utvikler 2 har ansvaret for å lage denne funksjonen
 
 
 # Funksjon for å beregne arealet av en sirkel skrives her. Funsjonen skal ta imot et parameter (r)
-    def arealSirkel (r):
-        pi = 3.14
-        areal = pi * r * r
-        return areal
+def arealSirkel (r):
+    areal = 3.14 * r * r
+    return areal
 # Funksjonen skal returnere arealet
 # Utvikler 2 har ansvaret for å lage denne funksjonen
 
@@ -85,34 +84,58 @@ while ans != "8":
     skriv_meny()
     
     ans=input("Hva ønsker du å gjøre. Velg tall? ") 
+    
     if ans=="1":
         clear()
         print("\nHer bergnes arealet av et kvadrat")
         venter=input("Trykk ENTER for å fortsette!")    
+    
     elif ans=="2":
         clear()
         print("\nHer bergnes arealet av et rektangel")
         venter=input("Trykk ENTER for å fortsette!") 
+    
     elif ans=="3":
         clear()
         print("\nHer bergnes arealet av en trekant") 
         venter=input("Trykk ENTER for å fortsette!") 
+    
     elif ans=="4":
         clear()
         print("\nHer bergnes arealet av et parallellogram")
         venter=input("Trykk ENTER for å fortsette!") 
+    
     elif ans=="5":
         clear()
+
         print("\nHer bergnes arealet av en rombe")
-        arealRombe=input("Trykk ENTER for å fortsette!") 
+        h = float(input("Skriv inn høyde: "))
+        g = float(input("Skriv inn grunnlinje: "))
+        areal = arealRombe(h, g)
+        print("Arealet av romben er " +  str(areal))
+
+        venter=input("Trykk ENTER for å fortsette!") 
+    
     elif ans=="6":
         clear()
+        
         print("\nHer bergnes arealet av en trapes")
-        arealTrapes=input("Trykk ENTER for å fortsette!")         
+        a = float(input("Skriv inn lengste siden: "))
+        b = float(input("Skriv inn korteste side: "))
+        h = float(input("Skriv inn høyden: "))
+        areal = arealTrapes(a, b, h)
+        print("Arealet av kvadratet er " + str(areal))
+
+        venter=input("Trykk ENTER for å fortsette!")         
+    
     elif ans=="7":
         clear()
         print("\nHer bergnes arealet av en sirkel")
-        arealSirkel=input("Trykk ENTER for å fortsette!") 
+        r = float(input("Skriv inn radiusen: "))
+        areal = arealSirkel(r)
+        print("Arealet av sirkelen er " + str(areal))
+        
+        venter=input("Trykk ENTER for å fortsette!") 
     
 print("\nTakk for at du brukte areal-programmet! Velkommen igjen!\n")          
     
