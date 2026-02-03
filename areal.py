@@ -21,7 +21,7 @@ def skriv_meny():
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
 
-def Kvadrat(s):
+def arealkvadrat(s):
     arealkvadrat = s*s
     return arealkvadrat
 
@@ -31,7 +31,7 @@ def Kvadrat(s):
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
 
-def rektangel(g, h):
+def arealrektangel(g, h):
     arealrektangel = g*h
     return arealrektangel
 
@@ -39,7 +39,7 @@ def rektangel(g, h):
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
 
-def trekant(g, h):
+def arealtrekant(g, h):
     arealtrekant = (g*h)/2
     return arealtrekant
 
@@ -47,7 +47,7 @@ def trekant(g, h):
 # Funksjonen skal returnere arealet
 # Utvikler 1 har ansvaret for å lage denne funksjonen
 
-def parallellogram(g, h):
+def arealparallellogram(g, h):
     arealparallellogram = g * h
     return arealparallellogram
 
@@ -88,21 +88,36 @@ while ans != "8":
     if ans=="1":
         clear()
         print("\nHer bergnes arealet av et kvadrat")
+        s = float(input("Skriv inn sidelengde: "))
+        areal = arealkvadrat(s)
+        print("Arealet av kvadratet er " + str(areal))
         venter=input("Trykk ENTER for å fortsette!")    
     
     elif ans=="2":
         clear()
         print("\nHer bergnes arealet av et rektangel")
+        g = float(input("Skriv inn grunnlinje: "))
+        h = float(input("Skriv inn høyde: "))
+        areal = arealrektangel(g, h)
+        print("Arealet av rektangelet er " + str(areal))
         venter=input("Trykk ENTER for å fortsette!") 
     
     elif ans=="3":
         clear()
         print("\nHer bergnes arealet av en trekant") 
+        g = float(input("Skriv inn grunnlinje: "))
+        h = float(input("Skriv inn høyde: "))
+        areal = arealtrekant(g, h)
+        print("Arealet av trekanten er " + str(areal))
         venter=input("Trykk ENTER for å fortsette!") 
     
     elif ans=="4":
         clear()
         print("\nHer bergnes arealet av et parallellogram")
+        g = float(input("Skriv inn grunnlinje: "))
+        h = float(input("Skriv inn høyde: "))
+        areal = arealparallellogram(g, h)
+        print("Arealet av parallellogrammet er " + str(areal))
         venter=input("Trykk ENTER for å fortsette!") 
     
     elif ans=="5":
